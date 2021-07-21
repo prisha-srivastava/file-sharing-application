@@ -22,6 +22,9 @@ app.set("views", path.join(__dirname, "/views"));
 app.set("view engine", "ejs");
 
 //Routes
+app.get("/", function (req, res) {
+  res.sendFile(path.join(__dirname + "/home.html"));
+}); //__dirname : It will resolve to your project folder.
 app.use("/api/files", require("./routes/files"));
 app.use("/files", require("./routes/show"));
 app.use("/files/download", require("./routes/download"));
