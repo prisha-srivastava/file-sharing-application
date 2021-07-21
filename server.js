@@ -2,11 +2,19 @@ const express = require("express");
 const app = express();
 const path = require("path");
 const PORT = process.env.PORT || 3000;
+const cors = require("cors");
 
 app.use(express.static("public"));
 app.use(express.json());
 const connectDB = require("./config/db");
 connectDB(); //connecting database
+
+//Cors
+const corsOptions = {
+  origin: process.env.ALLOWED_CLIENTS.split(","),
+};
+
+app.cors(cors(corsOptions));
 
 //Template engine
 //to let the application know that all the html files are in views folder
