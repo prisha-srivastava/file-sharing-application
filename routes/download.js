@@ -10,7 +10,7 @@ router.get("/:uuid", async (req, res) => {
   }
 
   //if file exists then create the download link->
-  const filePath = `${__dirname}/../${file.path}`; //saving filepath of uploads  directory
+  const filePath = `${__dirname}/${file.path}`; //saving filepath of uploads  directory
 
   res.download(filePath);
 });
