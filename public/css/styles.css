@@ -1,23 +1,23 @@
 :root {
   --main-bg-color: #edf5fe;
   --light-blue: #03a9f4;
-  --border-color: #0288d147;
+  --border-color: #ca5122;
   --container-width: 500px;
 }
 
 body {
-  font-family: system-ui;
+  font-family: 'Segoe UI';
   background: var(--main-bg-color);
-  height: 98vh;
+  height: 100vh;
   overflow: hidden;
 }
 
-.logo {
+/* .logo {
   position: absolute;
   top: 10px;
   left: 10px;
   width: 150px;
-}
+} */
 
 
 body,
@@ -34,14 +34,15 @@ body,
 
 .upload-container {
   background: #ffffff;
-  border-radius: 25px;
-  box-shadow: 0px 20px 20px 0px #00000017;
+  border-radius: 15px;
+  border: 4px solid black;
+  /* box-shadow: 0px 20px 20px 0px #00000017; */
 }
 
 .drop-zone {
   width: var(--container-width);
-  min-height: 200px;
-  border: 2px dashed var(--border-color);
+  /* min-height: 250px; */
+  /* border: 2px solid var(--border-color); */
   border-radius: 10px;
   margin: 30px;
   transition: 0.2s all ease-in;
@@ -91,10 +92,11 @@ body,
 
 .title {
   font-size: large;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #browseBtn {
-  color: #2196f3;
+  color: #ca5122;
   cursor: pointer;
 }
 
@@ -137,7 +139,7 @@ body,
   width: 100%;
   height: 3px;
   border-radius: 2px;
-  background: #03a9f4;
+  background: #ca5122;
   transition: transform 200ms linear;
   transform: scaleX(0);
   transform-origin: left;
@@ -172,11 +174,11 @@ body,
   width: 100%;
   border-radius: 3px;
   padding: 10px 15px;
-  font-size: 20px;
-  border: 2px dashed var(--border-color);
+  font-size: 15px;
+  border: 2px solid black;
   border-radius: 6px;
   background: #f5fcff;
-  color: #607d8b;
+  color: #6563d8;
 }
 
 .sharing-container img {
@@ -190,7 +192,7 @@ body,
 }
 
 .email-container form {
-  border: 2px solid var(--border-color);
+  border: 2px solid black;
   width: 100%;
   padding: 15px;
   box-sizing: border-box;
@@ -212,7 +214,7 @@ body,
 
 .email-container input {
   border: none;
-  border-bottom: 2px solid var(--border-color);
+  border-bottom: 2px solid black;
   height: 19px;
   font-size: 18px;
   text-align: center;
@@ -263,9 +265,7 @@ body,
   :root {
     --container-width: 320px;
   }
-  .image-vector {
-    display: none;
-  }
+
   .email-container .filed {
     flex-direction: column;
   }

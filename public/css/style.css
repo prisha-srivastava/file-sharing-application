@@ -7,7 +7,7 @@
 body {
   font-family: system-ui;
   background: var(--main-bg-color);
-  height: 98vh;
+  height: 100vh;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -23,15 +23,14 @@ body {
 }
 section.download {
   background: #fff;
-  width: 430px;
+  width: 250px;
   max-width: 90%;
-  border-radius: 25px;
-  box-shadow: 0px 20px 20px 0px #00000017;
+  border-radius: 15px;
   padding: 2rem;
   text-align: center;
 }
 .download__icon {
-  height: 8rem;
+  height: 4rem;
 }
 .download__meta h4 {
   margin-bottom: 0;
@@ -39,18 +38,18 @@ section.download {
 }
 .send-btn-container a {
   display: inline-block;
-  font-size: 18px;
+  font-size: 15px;
   padding: 8px 40px;
   margin-top: 15px;
-  background: var(--light-blue);
+  background: #ca5122;
   text-decoration: none;
   border: none;
   border-radius: 5px;
   color: #fff;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
+  /* transition: all 0.3s ease-in-out; */
 }
 
-.send-btn-container a:hover {
+/* .send-btn-container a:hover {
   background: var(--dark-blue);
-}
+} */

@@ -15,12 +15,12 @@
       <img
         class="download__icon"
         src="/img/file-download-solid.svg"
-        alt="inshare-download"
+        
       />
       <% if(locals.error){ %>
-      <h4><%= locals.error %> 😏</h4>
+      <h4><%= locals.error %> :(</h4>
       <% } else { %>
-      <h2>Your file is ready to download</h2>
+      <h3>Click Below to Download</h3>
       <p>Link expires in 24 hours</p>
       <div class="download__meta">
         <h4><%= fileName %></h4>
