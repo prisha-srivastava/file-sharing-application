@@ -51,7 +51,7 @@ body,
 /* will be added when user drags */
 .drop-zone.dragged {
   background: var(--main-bg-color);
-  border-color: #0288d1;
+  border-color: #ca5122;
 }
 
 .drop-zone input {

@@ -1,7 +1,5 @@
 :root {
   --main-bg-color: #edf5fe;
-  --light-blue: #03a9f4;
-  --dark-blue: #028bca;
 }
 
 body {
@@ -23,9 +21,10 @@ body {
 }
 section.download {
   background: #fff;
-  width: 250px;
+  width: 350px;
   max-width: 90%;
   border-radius: 15px;
+  border:4px solid black;
   padding: 2rem;
   text-align: center;
 }
@@ -47,9 +46,5 @@ section.download {
   border-radius: 5px;
   color: #fff;
   cursor: pointer;
-  /* transition: all 0.3s ease-in-out; */
+  
 }
-
-/* .send-btn-container a:hover {
-  background: var(--dark-blue);
-} */
